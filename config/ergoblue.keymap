@@ -22,7 +22,7 @@
     &kp DEL    &kp Q      &kp W      &kp F      &kp P      &kp B      &kp LBKT   &kp RBKT   &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp MINUS
     &kp BKSP   &kp A      &kp R      &kp S      &kp T      &kp G                            &kp K      &kp N      &kp E      &kp I      &kp O      &kp APOS
     &kp LSFT   &kp Z      &kp X      &kp C      &kp D      &kp V      &kp LPAR   &kp RPAR   &kp M      &kp H      &kp COMMA  &kp PERIOD &kp FSLH   &kp RSFT
-    &trans     &trans     &kp LALT   &kp LARW   &kp DARW                                               &kp UARW   &kp RARW   &kp RALT   &trans     &trans
+    &kp LCTRL  &kp LALT   &kp LEFT   &kp RIGHT  &lt 1 GRV                                              &lt 2 BSLH &kp DOWN   &kp UP     &kp RALT   &kp RCTRL
                                                            &kp DEL    &kp HOME   &kp END    &kp INS
                                                                       &kp PGUP   &kp PGDN
                                                 &kp SPC    &kp LCTL                         &kp LSFT   &kp RET
