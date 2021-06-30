@@ -1,6 +1,16 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#define KP_CMA KP_COMMA
+#define RW RWIN
+#define CPS CAPS
+#define GRV GRAVE
+#define KP_ETR KP_ENTER
+#define KP_SLH KP_SLASH
+#define KP_EQL KP_EQUAL
+#define KP_AST KP_ASTERISK
+#define KP_MIN KP_MINUS
+#define KP_PLS KP_PLUS
 
 / {
         keymap {
@@ -8,15 +18,15 @@
 
                 default_layer {
                         bindings = <
-    &kp GRAV   &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC   &trans     &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0  &trans
-    &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &kp CLCK   &kp M_MUTE &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
-    &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G                            &kp H      &kp J      &kp K      &kp L      &kp SCLN   &kp BKSP
-    &mo 2      &kp Z      &kp X      &kp C      &kp V      &kp B      &kp M_VOLD &kp M_VOLU &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH   &mo 2
-    &trans     &trans     &kp LALT   &kp LARW   &kp DOWN                                               &kp UARW   &kp RARW   &kp RALT   &trans     &trans
-                                                           &kp DEL    &kp HOME   &kp END    &kp INS
-                                                                      &kp PGUP   &kp PGDN
-                                                &kp SPC    &kp LCTL                         &kp LSFT   &kp RET
-                                                                      &kp LGUI   &mo 1
+    &kp ESC    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp C_MUTE &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp EQUAL
+    &kp DEL    &kp Q      &kp W      &kp F      &kp P      &kp B      &kp LBKT   &kp RBKT   &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp MINUS
+    &kp BKSP   &kp A      &kp R      &kp S      &kp T      &kp G                            &kp K      &kp N      &kp E      &kp I      &kp O      &kp APOS
+    &kp LSHIFT &kp Z      &kp X      &kp C      &kp D      &kp V      &kp LPAR   &kp RPAR   &kp M      &kp H      &kp COMMA  &kp PERIOD &kp FSLH   &kp RSHIFT
+    &kp LCTRL  &kp LALT   &kp LEFT   &kp RIGHT  &lt 1 GRV                                              &lt 2 BSLH &kp DOWN   &kp UP     &kp RALT   &kp RCTRL
+                                                           &kp HOME   &kp END    &kp PGUP   &mt RW CPS
+                                                                      &kp LWIN   &kp PGDN
+                                                &kp SPC    &kp TAB                          &kp ENTER  &kp LSHIFT
+                                                                      &trans     &tog 1
                         >;
                 };
 
